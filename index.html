@@ -4,114 +4,121 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0f4c3a" />
-  <title>Fotballstart 6 år – øvelser i 3'er-binge</title>
+  <title>Fotballstart 6 år – 3'er-binge</title>
   <style>
     :root{--bg:#f4f7f5;--card:#fff;--ink:#14201b;--muted:#607068;--line:#dce5e0;--green:#0f4c3a;--green2:#176b50;--soft:#eef5f1;--yellow:#fff4d9;--blue:#eaf3ff;--shadow:0 10px 28px rgba(20,45,34,.08)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}.shell{width:min(1040px,calc(100% - 22px));margin:auto}
-    header{padding:22px 0 14px}.hero{padding:28px;border-radius:28px;color:#fff;background:linear-gradient(135deg,#0d3f31,#176b50);box-shadow:var(--shadow)}.eyebrow{display:inline-block;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.13);font-size:13px;font-weight:850}.hero h1{margin:12px 0 10px;font-size:clamp(30px,6vw,52px);line-height:1.02;letter-spacing:-.04em}.hero p{max-width:760px;margin:0;color:rgba(255,255,255,.86);font-size:17px}.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pills span{padding:7px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);font-size:13px;font-weight:800}
-    .toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;gap:8px;padding:10px 0;background:rgba(244,247,245,.92);backdrop-filter:blur(10px)}button{font:inherit}.btn{border:1px solid var(--line);border-radius:12px;padding:9px 12px;background:#fff;font-weight:800;cursor:pointer}.intro{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin:8px 0 24px}.panel{padding:20px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}.panel h2{margin:0 0 8px;font-size:22px}.panel p{margin:0;color:var(--muted)}.session{display:grid;gap:9px;margin-top:14px}.session-row{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:9px;padding:10px;border-radius:13px;background:var(--soft)}.time{display:grid;place-items:center;width:44px;height:44px;border-radius:11px;background:var(--green);color:#fff;font-size:11px;font-weight:900;text-align:center;line-height:1.05}.session-row strong{display:block}.session-row small{color:var(--muted)}.jump{text-decoration:none;color:var(--green2);font-weight:900}.principles{display:grid;gap:9px;margin-top:14px}.principle{padding:11px 12px;border-radius:13px;background:var(--soft)}.principle strong{display:block}.principle span{font-size:14px;color:var(--muted)}
+    header{padding:22px 0 14px}.hero{padding:28px;border-radius:28px;color:#fff;background:linear-gradient(135deg,#0d3f31,#176b50);box-shadow:var(--shadow)}.eyebrow{display:inline-block;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.13);font-size:13px;font-weight:850}.hero h1{margin:12px 0 10px;font-size:clamp(30px,6vw,52px);line-height:1.02;letter-spacing:-.04em}.hero p{max-width:780px;margin:0;color:rgba(255,255,255,.86);font-size:17px}.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pills span{padding:7px 10px;border:1px solid rgba(255,255,255,.18);border-radius:999px;background:rgba(255,255,255,.08);font-size:13px;font-weight:800}
+    .toolbar{position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;gap:8px;padding:10px 0;background:rgba(244,247,245,.92);backdrop-filter:blur(10px)}button{font:inherit}.btn{border:1px solid var(--line);border-radius:12px;padding:9px 12px;background:#fff;font-weight:800;cursor:pointer}
+    .intro{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin:8px 0 24px}.panel{padding:20px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:var(--shadow)}.panel h2{margin:0 0 8px;font-size:22px}.panel p{margin:0;color:var(--muted)}
+    .session{display:grid;gap:9px;margin-top:14px}.session-row{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:9px;padding:10px;border-radius:13px;background:var(--soft)}.time{display:grid;place-items:center;width:50px;height:44px;border-radius:11px;background:var(--green);color:#fff;font-size:11px;font-weight:900;text-align:center;line-height:1.05}.session-row strong{display:block}.session-row small{color:var(--muted)}.jump{text-decoration:none;color:var(--green2);font-weight:900}.principles{display:grid;gap:9px;margin-top:14px}.principle{padding:11px 12px;border-radius:13px;background:var(--soft)}.principle strong{display:block}.principle span{font-size:14px;color:var(--muted)}
+    .queue-box{margin:18px 0 26px;padding:20px;border-radius:20px;background:#12271f;color:#dfeae5}.queue-box h2{margin:0 0 8px;color:#fff}.queue-box p{margin:7px 0}.queue-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}.queue-card{padding:14px;border-radius:15px;background:rgba(255,255,255,.08)}.queue-card strong{display:block;color:#fff;margin-bottom:4px}.queue-card span{font-size:14px}
     .section-head{margin:28px 0 12px}.section-head h2{margin:0;font-size:clamp(25px,4vw,34px)}.section-head p{margin:3px 0 0;color:var(--muted)}.drills{display:grid;gap:13px}details{overflow:hidden;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 8px 22px rgba(20,45,34,.055);scroll-margin-top:76px}summary{list-style:none;display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:13px;padding:16px;cursor:pointer}summary::-webkit-details-marker{display:none}.num{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:var(--green);color:#fff;font-weight:950;font-size:18px}.title h3{margin:0;font-size:20px}.title p{margin:3px 0 0;color:var(--muted);font-size:14px}.plus{display:grid;place-items:center;width:33px;height:33px;border-radius:10px;background:var(--soft);font-size:20px;transition:.18s}details[open] .plus{transform:rotate(45deg)}.body{padding:0 16px 18px 81px;border-top:1px solid var(--line)}.meta{display:flex;flex-wrap:wrap;gap:7px;margin:15px 0}.tag{padding:6px 9px;border-radius:999px;background:var(--soft);font-size:13px;font-weight:800}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.info,.say,.tip{padding:14px;border-radius:15px}.info{border:1px solid #e5ebe8;background:#fafcfb}.info h4,.say h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--green2)}.info p,.info ul{margin:0;color:#3f5149}.info ul{padding-left:18px}.say{grid-column:1/-1;background:var(--yellow);border:1px solid #f0d79f}.say p{margin:0;font-weight:780}.tip{grid-column:1/-1;background:var(--blue);color:#254767}.tip strong{display:block;margin-bottom:3px}.footer{margin:26px 0 42px;padding:20px;border-radius:20px;background:#12271f;color:#dfeae5}.footer h2{margin:0 0 8px;color:#fff}.footer p{margin:6px 0}
-    @media(max-width:760px){.hero{padding:22px 18px;border-radius:23px}.intro{grid-template-columns:1fr}.body{padding:0 11px 14px}.grid{grid-template-columns:1fr}.say,.tip{grid-column:auto}summary{grid-template-columns:45px 1fr auto;padding:13px 11px;gap:9px}.num{width:45px;height:45px;border-radius:12px}.title h3{font-size:17px}.session-row{grid-template-columns:49px 1fr auto}}
+    @media(max-width:760px){.hero{padding:22px 18px;border-radius:23px}.intro{grid-template-columns:1fr}.queue-grid{grid-template-columns:1fr}.body{padding:0 11px 14px}.grid{grid-template-columns:1fr}.say,.tip{grid-column:auto}summary{grid-template-columns:45px 1fr auto;padding:13px 11px;gap:9px}.num{width:45px;height:45px;border-radius:12px}.title h3{font-size:17px}.session-row{grid-template-columns:55px 1fr auto}}
   </style>
 </head>
 <body>
 <header class="shell"><section class="hero">
-  <div class="eyebrow">⚽ TRENERKORT · 6 ÅR · 3'ER-BINGE</div>
-  <h1>Gøye og enkle øvelser for de første fotballtreningene</h1>
-  <p>Tilpasset trening inne i en 3'er-binge. Bruk veggene og banens egne linjer, hold forklaringene korte og la barna være i aktivitet mest mulig.</p>
-  <div class="pills"><span>Lite utstyr</span><span>Mye lek</span><span>Mye ball</span><span>Lite kø</span><span>Korte forklaringer</span></div>
+  <div class="eyebrow">⚽ TRENERKORT · 6 ÅR · 3'ER-BINGE · CA. 60 MIN</div>
+  <h1>Gøye fotballøkter med mest mulig aktivitet</h1>
+  <p>Tilpasset barn som nettopp har startet med fotball. Bingen er banen, forklaringene er korte, og målet er at barna skal være i aktivitet nesten hele tiden.</p>
+  <div class="pills"><span>Lite utstyr</span><span>Mye lek</span><span>Mye ball</span><span>Minst mulig kø</span><span>Mye 3 mot 3</span></div>
 </section></header>
+
 <main class="shell">
   <div class="toolbar"><button class="btn" id="openAll">Åpne alle</button><button class="btn" id="closeAll">Lukk alle</button></div>
+
   <section class="intro">
-    <article class="panel"><h2>Forslag til en 45-minutters trening</h2><p>Du trenger ikke bruke alle øvelsene. For seksåringer er flyt og aktivitet viktigere enn å følge planen slavisk.</p>
+    <article class="panel">
+      <h2>Forslag til 60-minutters trening</h2>
+      <p>En enkel økt med få skifter. De første 35 minuttene er nesten alle aktive samtidig.</p>
       <div class="session">
-        <div class="session-row"><div class="time">7<br>MIN</div><div><strong>Katt og mus</strong><small>Dribling, fart og lek</small></div><a class="jump" href="#katt">Se ↓</a></div>
-        <div class="session-row"><div class="time">7<br>MIN</div><div><strong>Stiv heks</strong><small>Dribling og hjelpe hverandre</small></div><a class="jump" href="#heks">Se ↓</a></div>
-        <div class="session-row"><div class="time">8<br>MIN</div><div><strong>Trafikklys</strong><small>Kontroll på egen ball</small></div><a class="jump" href="#trafikk">Se ↓</a></div>
-        <div class="session-row"><div class="time">8<br>MIN</div><div><strong>1 mot 1</strong><small>Utfordre og forsvare</small></div><a class="jump" href="#enmot">Se ↓</a></div>
-        <div class="session-row"><div class="time">15<br>MIN</div><div><strong>3 mot 3</strong><small>La dem spille fotball</small></div><a class="jump" href="#spill">Se ↓</a></div>
+        <div class="session-row"><div class="time">0–5<br>MIN</div><div><strong>Fri lek med ball</strong><small>Én ball hver mens alle kommer på plass</small></div><a class="jump" href="#ballvenn">Se ↓</a></div>
+        <div class="session-row"><div class="time">5–13<br>MIN</div><div><strong>Katt og mus</strong><small>Alle mus har ball – nesten ingen venting</small></div><a class="jump" href="#katt">Se ↓</a></div>
+        <div class="session-row"><div class="time">13–21<br>MIN</div><div><strong>Stiv heks</strong><small>Dribling, blikk opp og samarbeid</small></div><a class="jump" href="#heks">Se ↓</a></div>
+        <div class="session-row"><div class="time">21–28<br>MIN</div><div><strong>Trafikklys</strong><small>Kontroll på egen ball</small></div><a class="jump" href="#trafikk">Se ↓</a></div>
+        <div class="session-row"><div class="time">28–31<br>MIN</div><div><strong>Drikkepause + lagdeling</strong><small>Trener deler lag mens barna drikker</small></div><span></span></div>
+        <div class="session-row"><div class="time">31–39<br>MIN</div><div><strong>Balltyven</strong><small>Alle i gang igjen før kampdelen</small></div><a class="jump" href="#balltyven">Se ↓</a></div>
+        <div class="session-row"><div class="time">39–58<br>MIN</div><div><strong>3 mot 3</strong><small>Korte kamper og raske bytter</small></div><a class="jump" href="#spill">Se ↓</a></div>
+        <div class="session-row"><div class="time">58–60<br>MIN</div><div><strong>Samling</strong><small>High-five, ett spørsmål og ferdig</small></div><span></span></div>
       </div>
     </article>
-    <article class="panel"><h2>Husk i bingen</h2><div class="principles">
-      <div class="principle"><strong>🗣️ Forklar på 15–20 sekunder</strong><span>Vis heller enn å prate lenge.</span></div>
-      <div class="principle"><strong>⚽ Ball til flest mulig</strong><span>Helst én ball per barn når øvelsen tillater det.</span></div>
-      <div class="principle"><strong>🏃 Unngå kø</strong><span>Alle bør være i aktivitet samtidig eller nesten samtidig.</span></div>
-      <div class="principle"><strong>😄 Lek først</strong><span>Gøye navn og en enkel historie gjør øvelsen lettere å forstå.</span></div>
-    </div></article>
+
+    <article class="panel">
+      <h2>Fire regler for god flyt</h2>
+      <div class="principles">
+        <div class="principle"><strong>⚽ Ball klar fra start</strong><span>Legg ut ballene før barna kommer. Fri dribling starter med én gang.</span></div>
+        <div class="principle"><strong>🗣️ Maks 20 sekunder forklaring</strong><span>Vis én gang, start øvelsen og forklar resten mens de holder på.</span></div>
+        <div class="principle"><strong>🏃 Ingen utslåtte spillere</strong><span>Unngå leker der barn må stå utenfor og vente.</span></div>
+        <div class="principle"><strong>🔄 Gjør neste aktivitet klar på forhånd</strong><span>Bruk samme binge og de samme ballene så langt det går.</span></div>
+      </div>
+    </article>
   </section>
 
-  <div class="section-head"><h2>Lek med ball</h2><p>Øvelser barna raskt forstår og som passer godt inne i bingen.</p></div>
+  <section class="queue-box">
+    <h2>Slik holder dere køen nede i én 3'er-binge</h2>
+    <p>Med mer enn seks barn kan ikke alle spille 3 mot 3 samtidig i én binge. Da er målet ikke «null venting», men <strong>ingen passiv venting over lang tid</strong>.</p>
+    <div class="queue-grid">
+      <div class="queue-card"><strong>4–6 barn</strong><span>Spill 2v2 eller 3v3. Alle er inne hele tiden. Dette er den enkleste organiseringen.</span></div>
+      <div class="queue-card"><strong>7–9 barn</strong><span>Lag tre lag. To lag spiller korte kamper på 2–3 minutter. Tredje lag har hver sin ball og gjør en enkel balloppgave på et trygt ledig område. Bytt raskt.</span></div>
+      <div class="queue-card"><strong>10–12 barn</strong><span>Lag fire små lag. Har dere plass ved siden av bingen, lag et lite 2v2-/ballområde der. Hvis ikke, roter lagene svært ofte og gi ventende spillere ball i beina.</span></div>
+    </div>
+    <p><strong>Praktisk tips:</strong> Del lagene i drikkepausen før kampdelen. Da slipper seksåringene å stå og vente mens treneren teller og organiserer.</p>
+  </section>
+
+  <div class="section-head"><h2>Lek med ball</h2><p>Gøye navn, enkle regler og mange ballberøringer.</p></div>
   <section class="drills">
+
+    <details id="ballvenn"><summary><div class="num">⚽</div><div class="title"><h3>Ballvenn</h3><p>Perfekt mens barna kommer til trening</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 5 min</span><span class="tag">⚽ Én ball hver</span><span class="tag">👥 Alle aktive</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><ul><li>Barna tar en ball med én gang de kommer inn i bingen.</li><li>De dribler fritt, stopper ballen med sålen og snur.</li><li>Trener kan gi små utfordringer: høyre fot, venstre fot, stopp og start.</li></ul></div><div class="info"><h4>Utstyr</h4><p>Bare én ball per barn. Ingen kjegler nødvendig.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Finn en ball og kjør! Prøv å finne ledig plass uten å krasje. Når jeg roper STOPP, skal ballen stå helt stille.»</p></div><div class="tip"><strong>Hvorfor denne er smart</strong>Ingen oppstilling eller venting ved treningsstart. Barn som kommer tidlig får mer ballkontakt, ikke mer kø.</div></div>
+    </div></details>
+
     <details id="katt" open><summary><div class="num">🐱</div><div class="title"><h3>Katt og mus</h3><p>Kom deg over banen uten at katten tar deg</p></div><div class="plus">+</div></summary><div class="body">
-      <div class="meta"><span class="tag">⏱ 5–8 min</span><span class="tag">⚽ Én ball per mus</span><span class="tag">📍 Hele bingen</span><span class="tag">👥 Alle samtidig</span></div>
-      <div class="grid">
-        <div class="info"><h4>Organisering</h4><p>Velg én spiller som er <strong>katt</strong>. Katten står midt på banen uten ball. Alle de andre er <strong>mus</strong> og starter langs den ene kortsiden med hver sin ball.</p></div>
-        <div class="info"><h4>Slik gjør dere</h4><ul><li>På trenerens signal dribler alle musene over til motsatt side.</li><li>Katten prøver å ta musene ved å berøre dem.</li><li>En mus som blir tatt, blir også katt.</li><li>De som kommer over, snur og gjør seg klare til neste signal.</li><li>Fortsett til alle eller nesten alle er katter. Start så en ny runde med ny katt.</li></ul></div>
-        <div class="say"><h4>Si dette til barna</h4><p>«Dere er mus med hver deres ball. Katten står i midten. Når jeg roper KJØR, skal musene komme seg helt over til den andre siden uten at katten tar dere. Blir du tatt, blir du også katt!»</p></div>
-        <div class="tip"><strong>Trenertips</strong>Katten tar spilleren med en lett berøring – ikke ved å sparke vekk ballen. Oppmuntre musene til å se opp, finne ledig plass og skifte retning. Dette fungerer veldig godt med bingens kortsider som tydelige start- og målområder.</div>
-      </div>
+      <div class="meta"><span class="tag">⏱ 6–8 min</span><span class="tag">⚽ Én ball per mus</span><span class="tag">📍 Hele bingen</span><span class="tag">👥 Alle samtidig</span></div>
+      <div class="grid"><div class="info"><h4>Organisering</h4><p>Én spiller er <strong>katt</strong> og står midt på banen uten ball. Alle de andre er <strong>mus</strong> og starter på den ene kortsiden med hver sin ball.</p></div><div class="info"><h4>Slik gjør dere</h4><ul><li>På trenerens signal dribler musene til motsatt kortside.</li><li>Katten prøver å ta musene med en lett berøring.</li><li>Blir en mus tatt, blir spilleren også katt.</li><li>De som kommer over gjør seg klare på den nye siden.</li><li>Fortsett til alle eller nesten alle er katter, og start på nytt med ny katt.</li></ul></div><div class="say"><h4>Si dette til barna</h4><p>«Dere er mus med hver deres ball. Katten står i midten. Når jeg roper KJØR, skal dere over til den andre siden uten at katten tar dere. Blir du tatt, blir du også katt!»</p></div><div class="tip"><strong>Trenertips</strong>Ikke bruk tid på perfekt teknikk. Se etter at musene begynner å løfte blikket, finne åpninger og endre retning.</div></div>
     </div></details>
 
-    <details id="heks"><summary><div class="num">🧙</div><div class="title"><h3>Stiv heks</h3><p>Blir du tatt, kan en venn befri deg med ballen</p></div><div class="plus">+</div></summary><div class="body">
-      <div class="meta"><span class="tag">⏱ 5–8 min</span><span class="tag">⚽ Ball til alle som ikke er heks</span><span class="tag">📍 Hele bingen</span></div>
-      <div class="grid">
-        <div class="info"><h4>Organisering</h4><p>Velg én eller to hekser uten ball. Alle de andre har hver sin ball og dribler fritt rundt i bingen.</p></div>
-        <div class="info"><h4>Slik gjør dere</h4><ul><li>Heksen prøver å ta spillerne med en lett berøring.</li><li>Blir en spiller tatt, stopper spilleren og står stille med beina fra hverandre.</li><li>Spilleren blir fri når en annen spiller <strong>spiller ballen mellom beina</strong> på den som står fast.</li><li>Bytt hekser ofte, gjerne hvert 60.–90. sekund.</li></ul></div>
-        <div class="say"><h4>Si dette til barna</h4><p>«Heksen prøver å ta dere. Blir du tatt, står du helt stille med beina fra hverandre. For å redde en venn må du spille ballen din mellom beina hans eller hennes. Da er spilleren fri igjen!»</p></div>
-        <div class="tip"><strong>Trenertips</strong>Her får barna både dribling, blikk opp og samarbeid. Ikke ha for mange hekser; målet er at barna skal lykkes med å føre ball og faktisk rekke å befri hverandre.</div>
-      </div>
+    <details id="heks"><summary><div class="num">🧙</div><div class="title"><h3>Stiv heks</h3><p>Befri en venn ved å spille ballen mellom beina</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 6–8 min</span><span class="tag">⚽ Ball til alle som ikke er heks</span><span class="tag">👥 Alle aktive</span></div>
+      <div class="grid"><div class="info"><h4>Organisering</h4><p>Velg én heks uten ball. De andre har hver sin ball og dribler rundt i bingen. Er gruppen stor, kan dere bruke to hekser.</p></div><div class="info"><h4>Slik gjør dere</h4><ul><li>Heksen tar en spiller med en lett berøring.</li><li>Den som blir tatt står stille med beina fra hverandre.</li><li>Spilleren blir fri når en annen spiller <strong>spiller ballen mellom beina</strong> på ham eller henne.</li><li>Bytt heks ofte, omtrent hvert 60.–90. sekund.</li></ul></div><div class="say"><h4>Si dette til barna</h4><p>«Blir du tatt av heksen, står du helt stille med beina fra hverandre. En venn kan redde deg ved å spille ballen mellom beina dine. Da er du fri igjen!»</p></div><div class="tip"><strong>Trenertips</strong>Ikke la heksen vokte spillere som er tatt. Målet er mye dribling og mange redningsaksjoner.</div></div>
     </div></details>
 
-    <details id="trafikk"><summary><div class="num">🚦</div><div class="title"><h3>Trafikklys</h3><p>Grønt, gult og rødt lys med ball</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 5–7 min</span><span class="tag">⚽ Én ball hver</span><span class="tag">📍 Hele bingen</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><ul><li><strong>Grønt:</strong> drible rundt i bingen.</li><li><strong>Gult:</strong> små, rolige touch.</li><li><strong>Rødt:</strong> stopp ballen helt.</li><li>Legg etter hvert til «blått» = snu og gå motsatt vei eller «turbo» = litt raskere.</li></ul></div>
-      <div class="info"><h4>Utstyr</h4><p>Bare én ball per barn. Bingen er allerede avgrenset, så du trenger ingen kjegler.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Når jeg sier grønt, kjører dere. Gult betyr sakte. Rødt betyr STOPP ballen. Klarer dere å stoppe den med én gang?»</p></div>
-      <div class="tip"><strong>Trenertips</strong>Bytt signal ofte. Det skal føles som en lek, ikke en teknikkøvelse med mye korrigering.</div>
-    </div></div></details>
+    <details id="trafikk"><summary><div class="num">🚦</div><div class="title"><h3>Trafikklys</h3><p>Grønt, gult og rødt lys med ball</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 5–7 min</span><span class="tag">⚽ Én ball hver</span><span class="tag">👥 Alle aktive</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><ul><li><strong>Grønt:</strong> drible rundt.</li><li><strong>Gult:</strong> rolig med små touch.</li><li><strong>Rødt:</strong> stopp ballen.</li><li><strong>Turbo:</strong> litt raskere.</li><li><strong>Snu:</strong> bytt retning.</li></ul></div><div class="info"><h4>Utstyr</h4><p>Én ball per barn. Hele bingen er området.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Grønt betyr kjør, gult betyr sakte og rødt betyr STOPP. Klarer dere å få ballen til å stoppe med én gang?»</p></div><div class="tip"><strong>Trenertips</strong>Hold tempo i signalene. Ikke stopp øvelsen for å korrigere – hjelp barna mens de dribler.</div></div>
+    </div></details>
 
-    <details><summary><div class="num">🦈</div><div class="title"><h3>Haien kommer</h3><p>Drible fra side til side og unngå haien</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 5–7 min</span><span class="tag">⚽ Én ball hver</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><p>Én hai starter i midten. Resten står på én kortside med ball. På signal dribler de over. Haien prøver å berøre spillerne. Kjør korte runder og bytt hai ofte.</p></div>
-      <div class="info"><h4>Forskjell fra Katt og mus</h4><p>Her kan treneren holde det som en ren lek med én eller to haier hele runden, mens Katt og mus bygger seg opp ved at de som tas blir katter.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Dere skal over havet med ballen. Haien bor i midten. Når jeg roper HAIEN KOMMER, må dere komme dere over før haien tar dere!»</p></div>
-    </div></div></details>
+    <details id="balltyven"><summary><div class="num">🦹</div><div class="title"><h3>Balltyven</h3><p>Beskytt skatten din</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 6–8 min</span><span class="tag">⚽ Én ball hver</span><span class="tag">👥 Ingen blir slått ut</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><p>Alle dribler med hver sin ball. Treneren eller én spiller er balltyv og prøver kontrollert å sparke ballene vekk. Mister et barn ballen, henter barnet den med en gang og fortsetter.</p></div><div class="info"><h4>Viktig</h4><p>Ingen må gå ut av leken. Det er nettopp det som gjør øvelsen køfri.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Ballene deres er skatter. Jeg er balltyven! Klarer dere å snu unna og passe på skatten?»</p></div><div class="tip"><strong>Trenertips</strong>Gjør balltyven akkurat så vanskelig at barna må se opp og snu, men fortsatt lykkes ofte.</div></div>
+    </div></details>
 
-    <details><summary><div class="num">⚽</div><div class="title"><h3>Ballvenn</h3><p>Bli kjent med ballen på egen hånd</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 5–8 min</span><span class="tag">⚽ Én ball hver</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><ul><li>Drible hvor du vil.</li><li>Stopp ballen med sålen.</li><li>Snu og gå andre veien.</li><li>Prøv høyre og venstre fot.</li></ul></div>
-      <div class="info"><h4>Utstyr</h4><p>Ingen kjegler nødvendig. Bruk hele bingen.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Finn en ledig plass med ballen din. Klarer du å stoppe ballen helt? Klarer du å snu og lure meg?»</p></div>
-    </div></div></details>
-
-    <details><summary><div class="num">🛡️</div><div class="title"><h3>Balltyven</h3><p>Pass på din egen ball</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 5–7 min</span><span class="tag">⚽ Én ball hver</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><p>Alle dribler. Treneren eller én spiller er balltyv og prøver rolig å sparke baller bort. Mister du ballen, henter du den straks og fortsetter – ingen blir slått ut.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Pass på skatten deres! Balltyven prøver å dytte ballen vekk. Klarer dere å snu unna og beholde den?»</p></div>
-      <div class="tip"><strong>Trenertips</strong>Ingen skal stå på sidelinjen. Mister de ballen, er de rett inn igjen.</div>
-    </div></div></details>
+    <details><summary><div class="num">🦈</div><div class="title"><h3>Haien kommer</h3><p>En ekstra lek dere kan bytte inn</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 5–7 min</span><span class="tag">⚽ Én ball hver</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><p>Én eller to haier står i midten. Resten starter med ball på kortsiden. På «HAIEN KOMMER!» dribler alle over. Kjør korte runder og bytt hai ofte.</p></div><div class="info"><h4>Bruk den som variasjon</h4><p>Den ligner Katt og mus, så bruk gjerne bare én av dem i samme økt.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Dere skal over havet med ballen. Når jeg roper HAIEN KOMMER, må dere komme dere til den andre siden!»</p></div></div>
+    </div></details>
   </section>
 
-  <div class="section-head"><h2>Fotballspill</h2><p>Fra enkel duell til vanlig 3'er-fotball.</p></div>
+  <div class="section-head"><h2>Spill</h2><p>Så raskt som mulig over i fotball – med små lag.</p></div>
   <section class="drills">
-    <details id="enmot"><summary><div class="num">1v1</div><div class="title"><h3>1 mot 1 til mål</h3><p>Utfordre, drible og score</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 6–8 min</span><span class="tag">⚽ 1–2 baller</span><span class="tag">🥅 Bingemål</span></div><div class="grid">
-      <div class="info"><h4>Organisering</h4><p>Del barna i små grupper hvis dere er mange. Trener spiller ballen inn, og to spillere konkurrerer om å score. Ny duell med en gang.</p></div>
-      <div class="info"><h4>Viktig</h4><p>Hold køen svært kort. Har dere mange barn, lag to små 1v1-områder i bingen.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Førstemann til ballen! Har du ballen, prøver du å score. Mister du den, prøver du å vinne den tilbake.»</p></div>
-    </div></div></details>
+    <details id="enmot"><summary><div class="num">1v1</div><div class="title"><h3>1 mot 1</h3><p>Kan brukes av og til, men pass på køen</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 5–8 min</span><span class="tag">⚠️ Del i flere grupper hvis mulig</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><p>To spillere konkurrerer om å score. Ny ball inn med én gang duellen er ferdig.</p></div><div class="info"><h4>Unngå dette</h4><p>Ikke ha ti barn i én lang rekke. Har dere mange barn og bare én 3'er-binge, er det bedre å gå direkte til 2v2 eller 3v3.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Har du ballen, prøver du å score. Mister du den, prøver du å vinne den tilbake!»</p></div></div>
+    </div></details>
 
-    <details><summary><div class="num">2v2</div><div class="title"><h3>2 mot 2 – finn en venn</h3><p>Enkel introduksjon til medspiller</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 6–8 min</span><span class="tag">⚽ Én ball</span><span class="tag">🥅 Bingemål</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><p>To mot to til mål. Ingen formasjoner eller posisjoner. La barna oppdage selv at de kan drible eller spille til lagkameraten.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Dere to er på lag. Kan du score selv, eller finner du vennen din?»</p></div>
-      <div class="tip"><strong>Trenertips</strong>Unngå å stoppe spillet for å forklare. La dem spille korte kamper på 1–2 minutter.</div>
-    </div></div></details>
+    <details><summary><div class="num">2v2</div><div class="title"><h3>2 mot 2</h3><p>Mange involveringer og en medspiller å finne</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 6–10 min</span><span class="tag">⚽ Én kampball</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><p>Spill 2 mot 2 til de vanlige målene. Korte kamper på 1–2 minutter. Ingen faste posisjoner.</p></div><div class="info"><h4>Hvorfor</h4><p>Barna får svært mange situasjoner der de må drible, vinne ball, score og oppdage medspilleren.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Dere to er på lag. Kan du score selv, eller finner du vennen din?»</p></div></div>
+    </div></details>
 
-    <details id="spill"><summary><div class="num">3v3</div><div class="title"><h3>3 mot 3 – bare spill!</h3><p>Den viktigste delen av treningen</p></div><div class="plus">+</div></summary><div class="body"><div class="meta"><span class="tag">⏱ 12–20 min</span><span class="tag">⚽ Én kampball</span><span class="tag">🥅 Hele bingen</span></div><div class="grid">
-      <div class="info"><h4>Slik gjør dere</h4><p>Tre mot tre i bingen. Spill korte kamper og bytt lag hvis dere er flere enn seks. Ha ekstra baller klare slik at spillet starter raskt igjen.</p></div>
-      <div class="info"><h4>Ikke gjør dette komplisert</h4><p>Ingen faste posisjoner, taktiske foredrag eller lange stopp. La barna løpe, drible, score og oppleve spillet.</p></div>
-      <div class="say"><h4>Si dette til barna</h4><p>«Nå spiller vi kamp. Prøv å score i det andre målet – og når dere mister ballen, prøver dere å vinne den tilbake!»</p></div>
-      <div class="tip"><strong>Trenertips</strong>For denne alderen er dette selve fotballæringen. Ikke tren bort spontaniteten med for mye coaching.</div>
-    </div></div></details>
+    <details id="spill" open><summary><div class="num">3v3</div><div class="title"><h3>3 mot 3 – bare spill!</h3><p>Den viktigste delen av treningen</p></div><div class="plus">+</div></summary><div class="body">
+      <div class="meta"><span class="tag">⏱ 15–20 min</span><span class="tag">⚽ Én kampball + reserveballer</span><span class="tag">🥅 Hele bingen</span></div>
+      <div class="grid"><div class="info"><h4>Slik gjør dere</h4><p>Tre mot tre i hele bingen. La barna spille. Ha flere baller klare slik at treneren kan sette en ny ball inn umiddelbart når en ball blir borte eller spillet stopper.</p></div><div class="info"><h4>Hvis dere er flere enn seks</h4><p>Lag små lag på 2–3 spillere. Spill kamper på 2–3 minutter og bytt med én gang. Laget som er ute får en balloppgave i stedet for å stå stille.</p></div><div class="say"><h4>Si dette til barna</h4><p>«Nå spiller vi kamp! Prøv å score i det andre målet. Mister dere ballen, prøver dere å vinne den tilbake.»</p></div><div class="tip"><strong>Trenertips</strong>Ikke stopp kampen for småfeil. Seksåringer lærer spillet først og fremst ved å spille. Ros forsøk på dribling, pasning, gjenvinning og mål – ikke bare resultatet.</div></div>
+    </div></details>
   </section>
 
-  <section class="footer"><h2>En enkel regel for treneren</h2><p>Hvis barna står stille og hører på lenge, er forklaringen for lang. Vis øvelsen raskt, sett dem i gang og hjelp dem mens de prøver.</p><p>Inne i en 3'er-binge trenger du som regel bare <strong>baller og eventuelt vester</strong>. Veggene, målene og linjene gir deg nesten all organiseringen du trenger.</p></section>
+  <section class="footer"><h2>Det viktigste for treneren</h2><p>En 60-minutters økt trenger ikke seks avanserte øvelser. For seksåringer er det ofte bedre med <strong>3–4 enkle aktiviteter som flyter godt og en lang spilldel</strong>.</p><p>Hvis barna står stille mens treneren forklarer eller organiserer, er det der dere først bør kutte tid. Ha baller klare, del lag før dere trenger dem og bruk bingen slik den allerede er.</p></section>
 </main>
 <script>
   const drills=[...document.querySelectorAll('details')];
