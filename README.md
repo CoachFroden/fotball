@@ -1,19 +1,26 @@
 # Fotballstart 6 år
 
-En enkel, mobilvennlig trenerapp med seks fotballøvelser for barn som nettopp har startet med fotball.
+En enkel, mobilvennlig trenerapp for trenere som skal lede barn rundt seks år på deres første fotballtreninger.
 
 ## Innhold
 
+Appen kombinerer enkle fotballøvelser med lekpregede aktiviteter som barna raskt forstår og husker:
+
 - Ballvenn
+- Katt og mus
+- Stiv heks
 - Trafikklys
+- Haien kommer
 - Balltyven
-- 1 mot 1 over linja
-- 2 mot 2 – finn veien til mål
+- 1 mot 1 – over streken
+- 2 mot 2 – småmål
 - 3 mot 3 – bare spill
 
-Hver øvelse inneholder varighet, utstyr, organisering, gjennomføring, en kort formulering treneren kan bruke direkte til barna og trenerpunkter.
+Flere av lekene har både en enkel variant uten ball og en variant med ball.
 
-Appen har også et forslag til en enkel første trening og bygger på prinsipper fra NFFs sportsplan for 6–7 år: mye aktivitet, mye ballkontakt, små grupper, lite kø og mye spill.
+Hver øvelse inneholder varighet, utstyr, organisering, gjennomføring, en kort formulering treneren kan bruke direkte til barna og konkrete trenerpunkter.
+
+Appen har også et forslag til en enkel trening på 45–50 minutter. Hovedprinsippene er mye aktivitet, korte forklaringer, lite kø, mange ballberøringer, små grupper og mye spill.
 
 ## Kjøring
 
